@@ -303,6 +303,16 @@
                         </assetToComponentMapping>
                     </cq:authoring>
                 </policy_1575040440977>
+                <policy_1695710792737
+                    jcr:lastModified="{Date}2023-09-29T12:59:01.530+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="mypolicy"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[group:General,group:My AEM Website - Content,group:My AEM Website - Structure,group:MyComponent,group:We.Retail,group:We.Retail Commerce]"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1695710792737>
             </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650
@@ -331,14 +341,53 @@
             <page jcr:primaryType="nt:unstructured">
                 <policy
                     jcr:description="Includes the required client libraries."
+                    jcr:lastModified="{Date}2023-09-26T12:25:41.024+05:30"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Generic Page"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    clientlibs="[aemsite.dependencies,aemsite.site]"
+                    clientlibs="[aemsite.dependencies,aemsite.site,myPolicy]"
+                    clientlibsAsync="false"
                     clientlibsJsHead="aemsite.dependencies">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy>
             </page>
+            <carousel jcr:primaryType="nt:unstructured">
+                <policy_1695710915270
+                    jcr:lastModified="{Date}2023-09-26T12:19:04.821+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="my policy"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    autopauseDisabled="false"
+                    autoplay="false"
+                    components="[group:General,group:My AEM Website - Content,group:My AEM Website - Structure,group:MyComponent,group:We.Retail]"
+                    controlsPrepended="false"
+                    delay="5000">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1695710915270>
+            </carousel>
         </components>
     </aemsite>
+    <weretail jcr:primaryType="nt:unstructured">
+        <components jcr:primaryType="nt:unstructured">
+            <content jcr:primaryType="nt:unstructured">
+                <carousel jcr:primaryType="nt:unstructured">
+                    <policy_1695711009007
+                        jcr:lastModified="{Date}2023-09-26T12:20:40.604+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="my policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        autopauseDisabled="false"
+                        autoplay="false"
+                        components="[group:General,group:My AEM Website - Content,group:My AEM Website - Structure,group:MyComponent,group:We.Retail]"
+                        controlsPrepended="false"
+                        delay="5000">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1695711009007>
+                </carousel>
+            </content>
+        </components>
+    </weretail>
 </jcr:root>
