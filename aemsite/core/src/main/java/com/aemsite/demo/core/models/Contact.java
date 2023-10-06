@@ -1,14 +1,17 @@
 package com.aemsite.demo.core.models;
-
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
+import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
 import javax.inject.Inject;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 import org.apache.sling.models.annotations.injectorspecific.ChildResource;
 import org.apache.sling.api.resource.Resource;
-@Model(adaptables = Resource.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
+@Model(adaptables = Resource.class,
+        resourceType= Contact.RESOURCE_TYPE, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
+@Exporter(name="jackson" , extensions="json")
 public class Contact {
+    static final String RESOURCE_TYPE="/apps/aemsite/components/content/Multifield";
     @ValueMapValue
     private String contactName;
     @ValueMapValue

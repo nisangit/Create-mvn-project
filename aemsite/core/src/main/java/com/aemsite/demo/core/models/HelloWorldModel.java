@@ -22,6 +22,8 @@ import javax.annotation.PostConstruct;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.models.annotations.Default;
+import org.apache.sling.models.annotations.DefaultInjectionStrategy;
+import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.InjectionStrategy;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
@@ -33,9 +35,11 @@ import com.day.cq.wcm.api.PageManager;
 
 import java.util.Optional;
 
-@Model(adaptables = Resource.class)
+@Model(adaptables = Resource.class,
+        resourceType= HelloWorldModel.RESOURCE_TYPE, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
+@Exporter(name="jackson" , extensions="json")
 public class HelloWorldModel {
-
+    static final String RESOURCE_TYPE="/apps/aemsite/components/helloworld";
     @ValueMapValue(name=PROPERTY_RESOURCE_TYPE, injectionStrategy=InjectionStrategy.OPTIONAL)
     @Default(values="No resourceType")
     protected String resourceType;
