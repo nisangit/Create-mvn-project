@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2023-10-05T15:45:40.731+05:30"
+        cq:lastModifiedBy="admin"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/aemsite/settings/wcm/templates/experience-fragment-web-variation"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="My Experience Fragment"
+        sling:resourceType="weretail/components/structure/xfpage">
+        <root
+            jcr:lastModified="{Date}2016-11-22T17:31:48.669+02:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <image
+                jcr:created="{Date}2023-10-05T15:44:48.762+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-10-05T15:45:40.726+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/image"
+                fileReference="/content/dam/we-retail/en/activities/surfing/surfing_5.jpg"
+                imageMap="\[poly(1102,778,1112,778,1112,768,1102,768,1102,778)&quot;quickview:sku=/var/commerce/products/we-retail/en/eq/surfing/eqsusuthd/eqsusuthd&amp;reservedVal_productPath=/var/commerce/products/we-retail/en/eq/surfing/eqsusuthd&amp;reservedVal_productThumbnail=http://localhost:4502/content/dam/we-retail/en/products/activities/surfing/source/stretch_top.png&quot;|&quot;&quot;|&quot;Surfboard&quot;]"/>
+        </root>
+    </jcr:content>
+</jcr:root>

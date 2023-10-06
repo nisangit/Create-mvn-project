@@ -29,9 +29,8 @@ public class CreateNodeServlet extends SlingAllMethodsServlet {
         ResourceResolver resourceResolver = request.getResourceResolver();
         Session session = resourceResolver.adaptTo(Session.class);
         try {
-            // Define the path where you want to create the node
             String nodePath = "/content/aemsite/newNode";
-            // Check if the node doesn't exist already
+
             if (!session.nodeExists(nodePath))
             {
                 Node parentNode = session.getNode("/content/aemsite");
