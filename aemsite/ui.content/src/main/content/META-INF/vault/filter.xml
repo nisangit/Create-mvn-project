@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/conf/aemsite" mode="merge"/>
+    <filter root="/conf/aemsite"/>
     <filter root="/content/aemsite" mode="merge"/>
     <filter root="/content/dam/aemsite" mode="merge">
         <exclude pattern="/content/dam/aemsite(/.*)?"/>
